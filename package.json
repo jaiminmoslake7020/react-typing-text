@@ -1,0 +1,57 @@
+{
+  "name": "react-typing-text",
+  "version": "0.0.1",
+  "description": "It allows to have typing text effect for a text string in react web application.",
+  "directories": {
+    "test": "test"
+  },
+  "type": "module",  
+  "files": ["dist"],
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "dev": "rollup -c -w",
+    "playground": "vite"
+  },
+  "keywords": [
+    "react",
+    "typing",
+    "text"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vanilla-extract/css": "^1.16.0",
+    "@vanilla-extract/recipes": "^0.5.5",
+    "@vanilla-extract/rollup-plugin": "^1.3.10",
+    "@vanilla-extract/vite-plugin": "^4.0.16",
+    "@vitejs/plugin-react": "^4.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.22.4",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.7.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.8"
+  },
+  "author": {
+    "name": "Jaimin Pandya",
+    "email": "jaiminmoslake7020@gmail.com",
+    "url": "https://jaimin-pandya.netlify.app/"
+  },
+  "license": "ISC"
+}

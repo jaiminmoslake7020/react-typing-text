@@ -1,0 +1,75 @@
+# Ignore Visual Studio Code settings
+.vscode/
+.vscode/*
+.code-workspace
+
+# Ignore Sublime Text settings
+*.sublime-workspace
+*.sublime-project
+
+# Ignore Vim swap and backup files
+*.swp
+*.swo
+*.swn
+*.un~
+*.bak
+*.tmp
+
+# Ignore Emacs backup files
+*~
+.#*
+
+# Ignore JetBrains IDE settings (IntelliJ, WebStorm, etc.)
+.idea/
+.idea/*
+
+# Ignore MacOS files
+.DS_Store
+
+
+# Node modules
+node_modules/
+node_modules/*
+
+# Build output
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ESLint cache
+.eslintcache
+
+# Test coverage
+coverage/
+
+# Storybook static files
+storybook-static/
+
+# Typescript build cache
+*.tsbuildinfo
+
+# Ignore compiled JavaScript files if using TypeScript
+*.js
+*.js.map
+
+# Ignore transpiled files if using Babel
+*.babelrc
+*.babelrc.js
+
+# Lock files
+package-lock.json
+yarn.lock
+
+
+

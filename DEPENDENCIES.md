@@ -1,0 +1,1 @@
+@rollup/plugin-typescript @rollup/plugin-node-resolve @rollup/plugin-terser @rollup/plugin-commonjs @types/react @vanilla-extract/css @vanilla-extract/recipes @vanilla-extract/rollup-plugin @vanilla-extract/vite-plugin @vitejs/plugin-react autoprefixer husky postcss sass tailwindcss typescript vite rimraf react tslib tsx
