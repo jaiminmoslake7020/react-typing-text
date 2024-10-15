@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  .width-flexible {
+    @apply w-[90dvw] md:w-[640px] lg:w-[768px] xl:w-[1024px] 2xl:w-[1280px];
+  }
+}
+body {
+  @apply font-sans;
+  @apply bg-black text-white;
+  @apply flex w-dvw lg:w-screen lg:min-h-screen justify-center;
+  @apply p-4 lg:p-16;
+  @apply text-slate-300;
+  min-height: 100dvh;
+}
+
+.all-texts {
+  @apply flex flex-col flex-wrap gap-8 box-border width-flexible;
+}
+
+.text-container {
+  @apply w-full;
+}
+.text-container h4 {
+  @apply text-blue-300 font-semibold;
+}
+
+.notes {
+  @apply flex flex-col gap-4;
+}
+
+.code-block-wrapper {
+  @apply overflow-x-auto w-full font-mono;
+  @apply flex bg-slate-700 gap-0 relative;
+}
+.code-block-wrapper .copy-button {
+  @apply absolute bottom-1 right-1;
+}
+.code-block-wrapper .copy-button button {
+  @apply w-fit h-fit px-4 py-1 text-slate-300 bg-slate-600 rounded text-sm;
+}
+.code-block-wrapper .number-block {
+  @apply flex flex-col bg-slate-800 px-4;
+  @apply py-4;
+}
+.code-block-wrapper .number-block p {
+  @apply text-slate-500;
+}
+.code-block-wrapper .code-block-container {
+  @apply overflow-x-auto w-full flex-grow;
+  @apply p-4;
+}
+.code-block-wrapper .code-block-container .code-block {
+  @apply w-fit flex-grow;
+  @apply rounded flex flex-col;
+}
+.code-block-wrapper .code-block-container .code-block .tag-start, .code-block-wrapper .code-block-container .code-block .tag-end {
+  @apply text-slate-400;
+}
+.code-block-wrapper .code-block-container .code-block .tag-self-end {
+  @apply pl-4;
+  @apply text-slate-400;
+}
+.code-block-wrapper .code-block-container .code-block .el-name {
+  @apply text-pink-400;
+  @apply pr-4;
+}
+.code-block-wrapper .code-block-container .code-block .attr-name {
+  @apply text-slate-100;
+}
+.code-block-wrapper .code-block-container .code-block .attr-equal-sign, .code-block-wrapper .code-block-container .code-block .attr-quote-sign {
+  @apply text-slate-400;
+}
+.code-block-wrapper .code-block-container .code-block .attr-optional-sign {
+  @apply text-slate-400;
+}
+.code-block-wrapper .code-block-container .code-block .attr-value {
+  @apply text-blue-300;
+}
+.code-block-wrapper .code-block-container .code-block .attr-object-value {
+  @apply text-blue-300;
+}
+.code-block-wrapper .code-block-container .code-block .invisible-item {
+  @apply invisible;
+}
+.code-block-wrapper .code-block-container .code-block p {
+  @apply min-w-[800px];
+}
+
+/*# sourceMappingURL=style.css.map */
