@@ -22,8 +22,9 @@
     "build": "rimraf dist && rollup -c",
     "dev": "rollup -c -w",
     "playground": "vite",
-    "build:css": "sass playground/main.scss playground/style.css --watch",
-    "build:tailwindcss": "npx tailwindcss -i ./playground/style.css -o ./playground/output.css --watch"
+    "playground-build": "vite build",
+    "watch:css": "sass playground/main.scss playground/style.css --watch",
+    "watch:tailwindcss": "npx tailwindcss -i ./playground/style.css -o ./playground/output.css --watch"
   },
   "keywords": [
     "react",

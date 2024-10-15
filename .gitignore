@@ -33,6 +33,7 @@ node_modules/*
 
 # Build output
 build/
+out/
 
 # Logs
 npm-debug.log*
