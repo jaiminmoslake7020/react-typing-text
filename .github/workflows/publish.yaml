@@ -28,9 +28,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Build Package
-        run: pnpm build
-
       - name: Publish Package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Use GitHub Secrets to store your npm token
