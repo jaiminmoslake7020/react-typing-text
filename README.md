@@ -2,6 +2,9 @@
 It is a package that contains reusable React component which is built with Styled-Components, React and TypeScript.
 This package allows a typing text animation feature.
 
+### Website
+[https://react-typing-text.netlify.app/](https://react-typing-text.netlify.app/)
+
 ## Installation
 ```bash
 npm install jaiminmoslake7020/react-typing-text
@@ -14,3 +17,5 @@ npm install jaiminmoslake7020/react-typing-text
             className=" any-styling-class "
                 />
 ```
+
+
