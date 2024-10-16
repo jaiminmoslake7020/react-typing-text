@@ -31,15 +31,15 @@ import { TypingText } from "@jaiminmoslake7020/react-typing-text";
 
 ### TypingTextPropTypes
 
-| Properties      | Type                                  | Values                                  | Default |
-|-----------------|---------------------------------------|-----------------------------------------|---------|
-| as?             | p \| h1 \| h2 \| h3 \| h4 \| h5 \| h6 | "p", "h1", "h2", "h3", "h4", "h5", "h6" | "p"     |
-| text            | string                                | "Some text you want to have!"           |         |
-| duration?       | number                                | 100      (in milliseconds)              |         |
-| className?      | string                                | "any-styling-class"                     |         |
-| cursor?         | CursorPropTypes                       |                                         |         |
-| noCursor?       | boolean                               | true, false                             |         |
-| spaceAtTextEnd? | boolean                               | true, false                             |         |
+| Properties      | Type                                  | Values                                                     | Default                                                   |
+|-----------------|---------------------------------------|------------------------------------------------------------|-----------------------------------------------------------|
+| as?             | p \| h1 \| h2 \| h3 \| h4 \| h5 \| h6 | "p", "h1", "h2", "h3", "h4", "h5", "h6"                    | "p"                                                       |
+| text            | string                                | "Some text you want to have!"                              |                                                           |
+| duration?       | number                                | 100      (in milliseconds)                                 | 100                                                       |
+| className?      | string                                | "any-styling-class"                                        |                                                           |
+| cursor?         | CursorPropTypes                       | {symbol: "any character",  className?:"any-styling-class"} | {symbol: "\|",  className?:"cursor-symbol-default-class"} |
+| noCursor?       | boolean                               | true, false                                                | false                                                     |
+| spaceAtTextEnd? | boolean                               | true, false                                                | false                                                     |
 
 ### CursorPropTypes
 

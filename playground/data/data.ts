@@ -26,20 +26,20 @@ export const TypingTextPropertiesData = [
     {
         "Properties": "cursor?",
         "Type": "CursorPropTypes",
-        "Values": "",
-        "Default": ""
+        "Values": "{symbol: \"any character\",  className?:\"any-styling-class\"}",
+        "Default": "{symbol: \"|\",  className?:\"cursor-symbol-default-class\"}"
     },
     {
         "Properties": "noCursor?",
         "Type": "boolean",
         "Values": "true, false",
-        "Default": ""
+        "Default": "false"
     },
     {
         "Properties": "spaceAtTextEnd?",
         "Type": "boolean",
         "Values": "true, false",
-        "Default": ""
+        "Default": "false"
     }
 ];
 
