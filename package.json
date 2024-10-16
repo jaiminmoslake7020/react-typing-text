@@ -1,6 +1,6 @@
 {
   "name": "@jaiminmoslake7020/react-typing-text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "It allows to have typing text effect for a text string in react web application.",
   "directories": {
     "test": "test"
