@@ -14,7 +14,7 @@ const App = () => {
         const text = `<TypingText as={"p"}
                             text={"Some text you want to have!"}
                             duration={100}
-                            className=" h-[270px] sm:h-[180px] md:h-[150px] lg:h-[130px] "
+                            className=" any css class "
                 />`;
 
         // Copy the text to the clipboard
