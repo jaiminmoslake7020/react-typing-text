@@ -9,10 +9,11 @@ export type CursorPropTypes = {
 };
 export type TypingTextPropTypes<T extends ElementType> = {
     as?: T;
-    duration: number;
+    duration?: number;
     text: string;
     cursor?: CursorPropTypes;
     noCursor?: boolean;
     spaceAtTextEnd?: boolean;
 } & ComponentPropsWithoutRef<T>;
+export declare const typingTextDefaultDuration = 100;
 export declare const TypingText: (props: TypingTextPropTypes<ElementType>) => import("react/jsx-runtime").JSX.Element;

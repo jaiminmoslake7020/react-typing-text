@@ -32,12 +32,14 @@ export type CursorPropTypes = {
 
 export type TypingTextPropTypes<T extends ElementType> = {
     as?: T;
-    duration: number;
+    duration?: number;
     text: string;
     cursor?: CursorPropTypes,
     noCursor?: boolean,
     spaceAtTextEnd?: boolean
 } & ComponentPropsWithoutRef<T>;
+
+export const typingTextDefaultDuration = 100;
 
 export const TypingText = (props: TypingTextPropTypes<ElementType>) => {
     const {
@@ -55,7 +57,7 @@ export const TypingText = (props: TypingTextPropTypes<ElementType>) => {
     } = cursor || defaultCursorValue;
 
     const maxCharLength = text.length;
-    const addCharDuration = duration;
+    const addCharDuration = duration || typingTextDefaultDuration;
 
     const [start, setStart] = useState<number>(0);
 

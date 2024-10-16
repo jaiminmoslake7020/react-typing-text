@@ -7,7 +7,7 @@ type CursorPropTypes = {
 };
 type TypingTextPropTypes<T extends ElementType> = {
     as?: T;
-    duration: number;
+    duration?: number;
     text: string;
     cursor?: CursorPropTypes;
     noCursor?: boolean;

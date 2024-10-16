@@ -1,13 +1,22 @@
-# React Component Package
+[# React Component Package
+
 It is a package that contains reusable React component which is built with Styled-Components, React and TypeScript.
 This package allows a typing text animation feature.
 
 ### Website
+
 [https://react-typing-text.netlify.app/](https://react-typing-text.netlify.app/)
 
 ## Installation
+
 ```bash
-npm install jaiminmoslake7020/react-typing-text
+npm install @jaiminmoslake7020/react-typing-text
+```
+
+## How to use it
+
+```code
+import { TypingText } from "@jaiminmoslake7020/react-typing-text";
 ```
 
 ```code
@@ -18,4 +27,24 @@ npm install jaiminmoslake7020/react-typing-text
                 />
 ```
 
+## Component Properties
+
+### TypingTextPropTypes
+
+| Properties      | Type                                  | Values                                  | Default |
+|-----------------|---------------------------------------|-----------------------------------------|---------|
+| as?             | p \| h1 \| h2 \| h3 \| h4 \| h5 \| h6 | "p", "h1", "h2", "h3", "h4", "h5", "h6" | "p"     |
+| text            | string                                | "Some text you want to have!"           |         |
+| duration?       | number                                | 100      (in milliseconds)              |         |
+| className?      | string                                | "any-styling-class"                     |         |
+| cursor?         | CursorPropTypes                       |                                         |         |
+| noCursor?       | boolean                               | true, false                             |         |
+| spaceAtTextEnd? | boolean                               | true, false                             |         |
+
+### CursorPropTypes
+
+| Properties | Type                                  | Values              | Default                       |
+|------------|---------------------------------------|---------------------|-------------------------------|
+| symbol     | p \| h1 \| h2 \| h3 \| h4 \| h5 \| h6 | "any character"     | "\|"                          |
+| className? | string                                | "any-styling-class" | "cursor-symbol-default-class" |
 
