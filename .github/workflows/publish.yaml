@@ -1,0 +1,37 @@
+name: Publish Package
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's different
+    # You can also specify tags here if you want to publish on versioning
+    # tags:
+    #   - 'v*'  # Publish when a new version tag is created
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify your Node.js version
+          registry-url: 'https://registry.npmjs.org/'  # npm registry URL
+
+      - name: Install pnpm
+        run: npm install -g pnpm  # or your package manager (yarn, pnpm, etc.)
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Build Package
+        run: pnpm build
+
+      - name: Publish Package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Use GitHub Secrets to store your npm token
+        run: npm publish --access public  # Adjust access based on your package type

@@ -1,4 +1,4 @@
-[# React Component Package
+# React Component Package
 
 It is a package that contains reusable React component which is built with Styled-Components, React and TypeScript.
 This package allows a typing text animation feature.
