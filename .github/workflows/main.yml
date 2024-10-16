@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: pnpm install  # or your package manager (yarn, pnpm, etc.)
+        run: npm install  # or your package manager (yarn, pnpm, etc.)
 
       - name: Build the website
         run: npm run playground-build  # or the command you use to build your project
