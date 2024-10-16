@@ -88,6 +88,11 @@ body {
   @apply min-w-[800px];
 }
 
+.table-container {
+  @apply flex w-full;
+  @apply overflow-x-auto;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

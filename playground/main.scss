@@ -98,13 +98,17 @@ body {
 }
 
 
-
 $table-bg: transparent;
 $table-header-bg: rgb(51 65 85 / var(--tw-bg-opacity)); // gray-200
 $table-row-hover-bg: transparent; // gray-100
 $table-alternate-row-bg: transparent; // gray-50
 $table-border-color: #cbd5e1; // gray-300;
 $table-text-color: white; // gray-600;
+
+.table-container{
+    @apply flex w-full;
+    @apply overflow-x-auto;
+}
 
 table {
     width: 100%;

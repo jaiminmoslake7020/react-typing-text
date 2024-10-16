@@ -570,6 +570,10 @@ video {
   height: 270px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -792,6 +796,12 @@ body {
 
 .code-block-wrapper .code-block-container .code-block p {
   min-width: 800px;
+}
+
+.table-container {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
 }
 
 table {

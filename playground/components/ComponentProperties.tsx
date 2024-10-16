@@ -4,7 +4,7 @@ import CursorPropTypesTable from './CursorPropTypesTable';
 
 const ComponentProperties = () => {
     return (
-        <section className={"flex flex-col gap-8"}>
+        <section className={"flex flex-col gap-8 w-full"}>
             <h2>Component Properties</h2>
             <TypingTextPropTypesTable />
             <CursorPropTypesTable />
