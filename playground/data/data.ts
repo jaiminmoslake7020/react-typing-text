@@ -40,6 +40,12 @@ export const TypingTextPropertiesData = [
         "Type": "boolean",
         "Values": "true, false",
         "Default": "false"
+    },
+    {
+        "Properties": "eachCharAsSpan?",
+        "Type": "boolean",
+        "Values": "true, false",
+        "Default": "false"
     }
 ];
 

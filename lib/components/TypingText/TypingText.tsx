@@ -36,7 +36,8 @@ export type TypingTextPropTypes<T extends ElementType> = {
     text: string;
     cursor?: CursorPropTypes,
     noCursor?: boolean,
-    spaceAtTextEnd?: boolean
+    spaceAtTextEnd?: boolean,
+    eachCharAsSpan?: boolean
 } & ComponentPropsWithoutRef<T>;
 
 export const typingTextDefaultDuration = 100;
@@ -49,6 +50,7 @@ export const TypingText = (props: TypingTextPropTypes<ElementType>) => {
         cursor,
         noCursor,
         spaceAtTextEnd,
+        eachCharAsSpan,
         ...rest
     } = props;
     const {
@@ -83,7 +85,7 @@ export const TypingText = (props: TypingTextPropTypes<ElementType>) => {
 
     return (
         <Element {...rest} >
-            {text.slice(0, start)}
+            { eachCharAsSpan ?  text.slice(0, start).split("").map(c => <span>{c}</span>) : text.slice(0, start)}
             { spaceAtTextEnd ?  <span>&nbsp;</span> : null}
             {!noCursor && <AnimatedCursor className={className}>{symbol}</AnimatedCursor>}
         </Element>

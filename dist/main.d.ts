@@ -12,6 +12,7 @@ type TypingTextPropTypes<T extends ElementType> = {
     cursor?: CursorPropTypes;
     noCursor?: boolean;
     spaceAtTextEnd?: boolean;
+    eachCharAsSpan?: boolean;
 } & ComponentPropsWithoutRef<T>;
 declare const TypingText: (props: TypingTextPropTypes<ElementType>) => react_jsx_runtime.JSX.Element;
 

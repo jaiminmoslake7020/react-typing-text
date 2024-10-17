@@ -40,6 +40,7 @@ import { TypingText } from "@jaiminmoslake7020/react-typing-text";
 | cursor?         | CursorPropTypes                       | {symbol: "any character",  className?:"any-styling-class"} | {symbol: "\|",  className?:"cursor-symbol-default-class"} |
 | noCursor?       | boolean                               | true, false                                                | false                                                     |
 | spaceAtTextEnd? | boolean                               | true, false                                                | false                                                     |
+| eachCharAsSpan? | boolean                               | true, false                                                | false                                                     |
 
 ### CursorPropTypes
 
