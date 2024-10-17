@@ -12,6 +12,7 @@ const App = () => {
                     duration={500}
                     className="  text-2xl font-bold mb-16 "
                     spaceAtTextEnd
+                    eachCharAsSpan
         />
         <div className="all-texts">
             <section className=" text-container text-one">
