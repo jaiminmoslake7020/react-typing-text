@@ -14,4 +14,4 @@ import{jsxs as e,jsx as t}from"react/jsx-runtime";import n,{useRef as r,useDebug
   }
 `,Qt=Kt.span`
   animation: ${Jt} 1s infinite;
-`,en={symbol:"|",className:"cursor-symbol-default-class"},tn=n=>{const{text:r,duration:o,as:a="p",cursor:s,noCursor:l,spaceAtTextEnd:u,...p}=n,{symbol:d,className:h}=s||en,f=r.length,m=o||100,[g,y]=i(0);return c((()=>(()=>{let e=0;const t=setInterval((()=>{y((e=>e+1)),e===f&&clearInterval(t),e++}),m)})()),[m,f]),e(a,{...p,children:[r.slice(0,g),u?t("span",{children:" "}):null,!l&&t(Qt,{className:h,children:d})]})};export{tn as TypingText};
+`,en={symbol:"|",className:"cursor-symbol-default-class"},tn=n=>{const{text:r,duration:o,as:a="p",cursor:s,noCursor:l,spaceAtTextEnd:u,...p}=n,{symbol:d,className:h}=s||en,f=r.length,m=o||100,[g,y]=i(0);return c((()=>()=>{(()=>{let e=0;const t=setInterval((()=>{y((e=>e+1)),(e===f||e>=f)&&clearInterval(t),e++}),m)})()}),[m,f]),e(a,{...p,children:[r.slice(0,g),u?t("span",{children:" "}):null,!l&&t(Qt,{className:h,children:d})]})};export{tn as TypingText};
