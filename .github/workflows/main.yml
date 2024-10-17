@@ -20,7 +20,7 @@ jobs:
         run: pnpm install  # or your package manager (yarn, pnpm, etc.)
 
       - name: Build the website
-        run: pnpm run playground-build  # or the command you use to build your project
+        run: pnpm run playground:build  # or the command you use to build your project
 
       - name: Build the project
         run:  ./scripts/prod-new.sh "${{ github.ref_name }}-${{ github.sha }}"  # or the command you use to build your project
