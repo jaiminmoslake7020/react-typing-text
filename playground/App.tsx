@@ -1,5 +1,5 @@
 import React from "react";
-import {TypingText} from "../lib/main";
+import {TypingText} from "@lib/main";
 import "./output.css";
 import CodeBlockWrapper from './components/CodeBlockWrapper';
 import ComponentProperties from './components/ComponentProperties';

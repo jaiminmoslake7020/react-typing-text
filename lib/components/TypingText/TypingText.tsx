@@ -75,13 +75,8 @@ export const TypingText = (props: TypingTextPropTypes<ElementType>) => {
                 timer++;
             }, addCharDuration);
         }
-        return () => {
-            mount();
-            if (intervalVar) {
-                clearInterval(intervalVar);
-            }
-        };
-    }, [addCharDuration, maxCharLength])
+        return mount();
+    }, [addCharDuration, maxCharLength]);
 
     return (
         <Element {...rest} >

@@ -1,6 +1,6 @@
 {
   "name": "@jaiminmoslake7020/react-typing-text",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "It allows to have typing text effect for a text string in react web application.",
   "directories": {
     "test": "test"
@@ -22,7 +22,8 @@
     "build": "rimraf dist && rollup -c",
     "dev": "rollup -c -w",
     "playground": "vite",
-    "playground-build": "vite build",
+    "playground:build": "vite build",
+    "serve:build": "serve -s out",
     "watch:css": "sass playground/main.scss playground/style.css --watch",
     "watch:tailwindcss": "npx tailwindcss -i ./playground/style.css -o ./playground/output.css --watch"
   },

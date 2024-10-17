@@ -5,7 +5,12 @@ import { resolve } from 'path';
 
 export default defineConfig({
     build: {
-        outDir: './out'  // Specify the desired output folder here
+        outDir: './out', // Specify the desired output folder here
+        rollupOptions: {
+            output: {
+                assetFileNames: '[name].[ext]',  // Preserve asset names and extensions
+            },
+        },
     },
     plugins: [
         react(),
