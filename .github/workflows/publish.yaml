@@ -5,8 +5,8 @@ on:
     branches:
       - main  # Change this to your default branch if it's different
     # You can also specify tags here if you want to publish on versioning
-    # tags:
-    #   - 'v*'  # Publish when a new version tag is created
+    tags:
+      - '0.*'  # Publish when a new version tag is created
 
 jobs:
   publish:
