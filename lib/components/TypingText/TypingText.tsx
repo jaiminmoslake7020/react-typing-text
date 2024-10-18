@@ -80,7 +80,7 @@ export const TypingText = (props: TypingTextPropTypes<ElementType>) => {
 
     return (
         <Element {...rest} >
-            { eachCharAsSpan ?  text.slice(0, start).split("").map(c => <span>{c}</span>) : text.slice(0, start)}
+            { eachCharAsSpan ?  text.slice(0, start).split("").map((c, i) => <span key={`char-${i}`}>{c}</span>) : text.slice(0, start)}
             { spaceAtTextEnd ?  <span>&nbsp;</span> : null}
             {!noCursor && <AnimatedCursor className={className}>{symbol}</AnimatedCursor>}
         </Element>
