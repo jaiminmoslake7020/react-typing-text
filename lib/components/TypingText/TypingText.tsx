@@ -63,20 +63,18 @@ export const TypingText = (props: TypingTextPropTypes<ElementType>) => {
 
     const [start, setStart] = useState<number>(0);
 
-    let intervalVar:number;
     useEffect(() => {
-        const mount = () => {
-            let timer = 0;
-            const intervalVar = setInterval(() => {
+        const timeOutVar = setTimeout(() => {
+            if (start === maxCharLength || start >= maxCharLength) {
+                clearInterval(timeOutVar);
+            } else {
                 setStart((x) => x + 1);
-                if (timer === maxCharLength || timer >= maxCharLength) {
-                    clearInterval(intervalVar);
-                }
-                timer++;
-            }, addCharDuration);
-        }
-        return mount();
-    }, [addCharDuration, maxCharLength]);
+            }
+        }, addCharDuration);
+        return () => {
+            clearInterval(timeOutVar);
+        };
+    }, [addCharDuration, maxCharLength, start]);
 
     return (
         <Element {...rest} >

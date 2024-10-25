@@ -15,6 +15,10 @@ body {
   min-height: 100dvh;
 }
 
+.dark-text {
+  @apply text-8xl font-bold mb-16 tracking-[2rem];
+}
+
 .all-texts {
   @apply flex flex-col flex-wrap gap-8 box-border width-flexible;
 }

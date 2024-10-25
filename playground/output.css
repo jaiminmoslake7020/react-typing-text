@@ -629,6 +629,14 @@ body {
   min-height: 100dvh;
 }
 
+.dark-text {
+  margin-bottom: 4rem;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2rem;
+}
+
 .all-texts {
   width: 90dvw;
 }
